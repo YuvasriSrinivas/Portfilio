@@ -1,0 +1,50 @@
+/* Custom premium styling layer for the Contact workflow view */
+
+/* Base container adjustment */
+body {
+    background-color: #111111;
+}
+
+/* Premium smooth spring animation for inputs and cards */
+.contact-form-card {
+    will-change: transform, border-color, box-shadow;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-form-card:hover {
+    border-color: rgba(230, 30, 37, 0.15);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 50px -10px rgba(230, 30, 37, 0.05);
+}
+
+/* Coordinates card lift on hover */
+.contact-info-block {
+    will-change: transform, border-color;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-info-block:hover {
+    transform: translateX(4px);
+    border-color: rgba(230, 30, 37, 0.3);
+}
+
+/* High-contrast smooth border highlights for input focus modes */
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #e61e25 !important;
+    box-shadow: 0 0 0 2px rgba(230, 30, 37, 0.2);
+}
+
+/* Standard scrollbar integration tracking core template theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e61e25;
+    border-radius: 4px;
+}

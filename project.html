@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Srinivas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./project.css">
+</head>
+<body class="bg-[#111] text-white font-sans antialiased overflow-x-hidden relative">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#111]/80 backdrop-blur-md border-b border-white/5 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-wide text-white">Molleti Yuvasri Srinivas</div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="./index.html" class="hover:text-[#e61e25] transition-colors">Home</a>
+            <a href="./about.html" class="hover:text-[#e61e25] transition-colors">About</a>
+            <a href="./skill.html" class="hover:text-[#e61e25] transition-colors">Skills</a>
+            <a href="./project.html" class="text-[#e61e25] transition-colors">Projects</a>
+            <a href="./contact.html" class="hover:text-[#e61e25] transition-colors">Contact</a>
+        </nav>
+        <button class="bg-[#e61e25] hover:bg-[#c1141a] text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-[#e61e25]/20">
+            Hire Me
+        </button>
+    </header>
+
+    <section class="min-h-screen pt-32 pb-32 px-6 md:px-20 relative">
+        
+        <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#e61e25]/5 rounded-full filter blur-[150px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#e61e25]/5 rounded-full filter blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-6xl w-full mx-auto mb-32 relative z-10 text-center">
+            <h3 class="text-sm font-bold tracking-widest text-[#e61e25] uppercase mb-2">Selected Deployments</h3>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+                Production <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-[#e61e25]">Registry</span>
+            </h2>
+            <p class="text-gray-400 text-sm md:text-base mt-4 max-w-xl leading-relaxed mx-auto">
+                Scroll down to witness the flight path across my custom software architectures, tracking from core engine builds to visual compute layers.
+            </p>
+        </div>
+
+        <div class="max-w-6xl w-full mx-auto relative z-10">
+            
+            <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-white/10 via-white/5 to-transparent hidden lg:block">
+                <div id="flight-path-fill" class="w-full bg-gradient-to-b from-[#e61e25] to-transparent h-0 transition-all duration-300 ease-out"></div>
+                
+                <div id="scroll-airplane" class="absolute left-1/2 -translate-x-1/2 text-[#e61e25] pointer-events-none drop-shadow-[0_0_20px_#e61e25] will-change-transform z-40 transition-all duration-300 ease-out" style="top: 0%; transform: translate(-50%, -50%) rotate(90deg);">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L14 19v-5.5l8 2.5z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="space-y-40 lg:space-y-48">
+                
+                <div class="project-row grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative opacity-0 translate-y-12 transition-all duration-700 ease-out">
+                    <div class="space-y-6 lg:text-right lg:pr-12">
+                        <div class="flex items-center lg:justify-end gap-4">
+                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 01 // Takeoff Station</span>
+                            <div class="h-[1px] bg-white/10 w-12 hidden lg:block"></div>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black tracking-tight">Neon Racer</h3>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                            A fast-paced cybernetic physics simulation engine. Features dynamic runtime vector rendering, integrated math boundaries, and efficient canvas handling mechanics for silky-smooth framerate control.
+                        </p>
+                        <div class="flex flex-wrap lg:justify-end gap-2 pt-2">
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Python Canvas</span>
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Vector Maths</span>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:pl-12">
+                        <div class="project-image-frame overflow-hidden rounded-2xl border border-white/5 bg-[#161616] shadow-2xl relative group">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-60 z-10 pointer-events-none"></div>
+                            <img src="./public/NeonRace.png" alt="Neon Racer Showcase" class="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative opacity-0 translate-y-12 transition-all duration-700 ease-out">
+                    <div class="lg:pr-12 order-2 lg:order-1">
+                        <div class="project-image-frame overflow-hidden rounded-2xl border border-white/5 bg-[#161616] shadow-2xl relative group">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-60 z-10 pointer-events-none"></div>
+                            <img src="./public/primeclone.png" alt="Prime Video Clone Showcase" class="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 lg:pl-12 order-1 lg:order-2">
+                        <div class="flex items-center gap-4">
+                            <div class="h-[1px] bg-white/10 w-12 hidden lg:block"></div>
+                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 02 // Cruise Waypoint</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black tracking-tight">Prime Clone</h3>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                            A pixel-perfect, high-fidelity user interface replicate modeled to handle intensive media structures. Optimized thoroughly using complex flex grids, responsive layouts, and modern content slider frameworks.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">HTML5</span>
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">CSS Grid Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative opacity-0 translate-y-12 transition-all duration-700 ease-out">
+                    <div class="space-y-6 lg:text-right lg:pr-12">
+                        <div class="flex items-center lg:justify-end gap-4">
+                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 03 // Final Touchdown</span>
+                            <div class="h-[1px] bg-white/10 w-12 hidden lg:block"></div>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black tracking-tight">Facial Expression AI</h3>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                            An intelligent computer vision computing model optimized to classify real-time biometric landmarks from human expressions using multi-dimensional analytical arrays and array processing pipelines.
+                        </p>
+                        <div class="flex flex-wrap lg:justify-end gap-2 pt-2">
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Python AI</span>
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Pandas & NumPy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:pl-12">
+                        <div class="project-image-frame overflow-hidden rounded-2xl border border-white/5 bg-[#161616] shadow-2xl relative group">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-60 z-10 pointer-events-none"></div>
+                            <img src="./public/Facial Emotion.png" alt="Facial Emotion Detection Showcase" class="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const airplane = document.getElementById('scroll-airplane');
+        const flightPathFill = document.getElementById('flight-path-fill');
+        let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            
+            // Calculate precise scroll ratio percentage
+            const scrollPercent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+            
+            // Map plane position and path filler down the central line track
+            airplane.style.top = `${scrollPercent}%`;
+            flightPathFill.style.height = `${scrollPercent}%`;
+
+            // Dynamic Takeoff and Navigation angles:
+            let rotation = 90; // Default flat route pointing straight down
+            
+            if (scrollTop > lastScrollTop) {
+                // Scrolling DOWN: simulate a banking takeoff/dive trajectory
+                if (scrollPercent < 35) {
+                    rotation = 115; // Takeoff tilt from Project 1 to 2
+                } else if (scrollPercent >= 35 && scrollPercent < 75) {
+                    rotation = 65;  // Adjust navigation bank crossing to Project 2
+                } else {
+                    rotation = 120; // Landing approach glide vector to Project 3
+                }
+            } else if (scrollTop < lastScrollTop) {
+                // Scrolling UP: banking flight trajectory upward
+                if (scrollPercent > 65) {
+                    rotation = 45;  // Lift upward out of Project 3
+                } else if (scrollPercent <= 65 && scrollPercent > 25) {
+                    rotation = -45; // Banking ascent crossing through Project 2
+                } else {
+                    rotation = 35;  // Stabilizing run approach to return home to Project 1
+                }
+            }
+
+            // Apply calculated transformations instantly onto the airplane element
+            airplane.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+            
+            // Reset the nose position cleanly to face straight down once scrolling stops
+            clearTimeout(airplane.flightTimeout);
+            airplane.flightTimeout = setTimeout(() => {
+                airplane.style.transform = `translate(-50%, -50%) rotate(90deg)`;
+            }, 200);
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, { passive: true });
+
+        // Intersection Observer to smoothly reveal project cards upon proximity crossing
+        const projectRows = document.querySelectorAll('.project-row');
+        const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+
+        const rowObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-12');
+                    rowObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        projectRows.forEach(row => rowObserver.observe(row));
+    </script>
+</body>
+</html>

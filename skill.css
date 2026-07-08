@@ -1,0 +1,75 @@
+/* Core Global 3D Workspace Engine Configurations */
+.perspective-global {
+    perspective: 1200px;
+}
+
+/* Isometric structural view layout for matching spatial depth */
+.isometric-container {
+    transform-style: preserve-3d;
+}
+
+/* Separate layer zones to contain card flips smoothly */
+.scene3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* Premium 3D transformation matrix properties */
+.card3d {
+    transform-style: preserve-3d;
+    will-change: transform, border-color, box-shadow;
+    transition: transform 0.15s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.4s, box-shadow 0.4s;
+}
+
+/* Hyper-glossy red drop projection effect when triggering focus */
+.scene3d:hover .card3d {
+    border-color: rgba(230, 30, 37, 0.4);
+    box-shadow: 0 30px 50px -15px rgba(0, 0, 0, 0.9), 
+                0 0 30px -5px rgba(230, 30, 37, 0.15);
+}
+
+/* Interactive Depth shifting for text/inner components */
+.card3d h4, .card3d p, .card3d div {
+    transform: translateZ(30px);
+}
+
+/* Precise widths for animated timeline metric bars */
+.width-95 { width: 95%; }
+.width-90 { width: 90%; }
+.width-85 { width: 85%; }
+.width-88 { width: 88%; }
+.width-80 { width: 80%; }
+
+/* Background Kinetic Glow Animations */
+@keyframes floatAmbient {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-25px) scale(1.05);
+    }
+}
+
+.animate-float-slow {
+    animation: floatAmbient 8s infinite ease-in-out;
+}
+
+.animate-float-delayed {
+    animation: floatAmbient 12s infinite ease-in-out;
+    animation-delay: 3s;
+}
+
+/* Custom platform responsive scrollbar elements tracking core matrix colors */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e61e25;
+    border-radius: 4px;
+}

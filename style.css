@@ -1,0 +1,24 @@
+/* Custom scrollbar matching the red/dark theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e61e25;
+    border-radius: 4px;
+}
+
+/* Text Selection Highlight Styles */
+::-moz-selection { 
+    background: #e61e25; 
+    color: #fff; 
+}
+
+::selection { 
+    background: #e61e25; 
+    color: #fff; 
+}

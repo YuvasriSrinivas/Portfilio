@@ -1,0 +1,55 @@
+/* Core Styling Matrix for Project Intake Blueprint */
+
+/* Base setup optimization */
+body {
+    background-color: #111111;
+}
+
+/* Premium smooth shadow lift on the primary engine intake block */
+.intake-card {
+    will-change: border-color, box-shadow;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.intake-card:hover {
+    border-color: rgba(230, 30, 37, 0.1);
+    box-shadow: 0 40px 80px -25px rgba(0, 0, 0, 0.9);
+}
+
+/* Tier Objective Choice Selection Blocks styling layer */
+.tier-select-card {
+    will-change: transform, border-color, background-color;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tier-select-card:hover {
+    border-color: rgba(230, 30, 37, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Active Highlight state matching your specific high contrast red accent */
+.active-tier {
+    background-color: #161616 !important;
+    border-color: #e61e25 !important;
+    box-shadow: 0 0 20px -5px rgba(230, 30, 37, 0.2);
+}
+
+/* Form input border ring tracking highlights */
+.input-group input:focus,
+.input-group textarea:focus {
+    box-shadow: 0 0 0 1px #e61e25;
+}
+
+/* Custom platform scrollbars matching the complete workspace palette */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e61e25;
+    border-radius: 4px;
+}

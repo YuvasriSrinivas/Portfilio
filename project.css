@@ -1,0 +1,45 @@
+/* Premium Styling Matrix for Portfolio Project Index */
+
+/* Base container configurations */
+body {
+    background-color: #111111;
+}
+
+/* Asymmetric spacing alignment context grids */
+.project-row {
+    transform-style: preserve-3d;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Premium image layer container styling */
+.project-image-frame {
+    will-change: border-color, box-shadow, transform;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Structural elevation transformation on image view components */
+.project-image-frame:hover {
+    border-color: rgba(230, 30, 37, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 40px 80px -25px rgba(0, 0, 0, 0.95), 
+                0 0 45px -10px rgba(230, 30, 37, 0.08);
+}
+
+/* High performance easing for tracking transitions */
+#scroll-airplane {
+    transition: top 0.3s cubic-bezier(0.1, 0.75, 0.25, 1), transform 0.25s ease-out;
+}
+
+/* Custom layout responsive scrollbars mapping dark theme values */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e61e25;
+    border-radius: 4px;
+}
