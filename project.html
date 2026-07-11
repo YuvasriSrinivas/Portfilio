@@ -103,12 +103,12 @@
                 <div class="project-row grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative opacity-0 translate-y-12 transition-all duration-700 ease-out">
                     <div class="space-y-6 lg:text-right lg:pr-12">
                         <div class="flex items-center lg:justify-end gap-4">
-                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 03 // Final Touchdown</span>
+                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 03 // Stratosphere Glide</span>
                             <div class="h-[1px] bg-white/10 w-12 hidden lg:block"></div>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-black tracking-tight">Facial Expression AI</h3>
                         <p class="text-gray-400 text-sm md:text-base leading-relaxed">
-                            An intelligent computer vision computing model optimized to classify real-time biometric landmarks from human expressions using multi-dimensional analytical arrays and array processing pipelines.
+                            An intelligent computer vision computing model optimized to classify real-time biometric landmarks from human expressions. Achieved 95% emotion detection accuracy using a custom CNN architecture trained thoroughly on dynamic expression datasets.
                         </p>
                         <div class="flex flex-wrap lg:justify-end gap-2 pt-2">
                             <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Python AI</span>
@@ -120,6 +120,30 @@
                         <div class="project-image-frame overflow-hidden rounded-2xl border border-white/5 bg-[#161616] shadow-2xl relative group">
                             <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-60 z-10 pointer-events-none"></div>
                             <img src="./public/Facial Emotion.png" alt="Facial Emotion Detection Showcase" class="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative opacity-0 translate-y-12 transition-all duration-700 ease-out">
+                    <div class="lg:pr-12 order-2 lg:order-1">
+                        <div class="project-image-frame overflow-hidden rounded-2xl border border-white/5 bg-[#161616] shadow-2xl relative group">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-60 z-10 pointer-events-none"></div>
+                            <img src="./public/Augmented.gif" alt="Augmented Reality Cloak Showcase" class="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700">
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 lg:pl-12 order-1 lg:order-2">
+                        <div class="flex items-center gap-4">
+                            <div class="h-[1px] bg-white/10 w-12 hidden lg:block"></div>
+                            <span class="text-xs font-mono font-bold text-[#e61e25] tracking-widest uppercase">Project 04 // Final Touchdown</span>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black tracking-tight">Augmented Reality Cloak</h3>
+                        <p class="text-gray-400 text-sm md:text-base leading-relaxed">
+                            A real-time background replacement system simulating an Invisibility Cloak framework. Utilizes color space transformation (HSV), dynamic pixel masking, and high-accuracy frame differencing mechanics for responsive object segmentation.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">Python OpenCV</span>
+                            <span class="text-[10px] font-mono bg-[#161616] px-3 py-1.5 rounded-md text-gray-400 border border-white/5">NumPy</span>
                         </div>
                     </div>
                 </div>
@@ -149,21 +173,25 @@
             
             if (scrollTop > lastScrollTop) {
                 // Scrolling DOWN: simulate a banking takeoff/dive trajectory
-                if (scrollPercent < 35) {
+                if (scrollPercent < 25) {
                     rotation = 115; // Takeoff tilt from Project 1 to 2
-                } else if (scrollPercent >= 35 && scrollPercent < 75) {
+                } else if (scrollPercent >= 25 && scrollPercent < 55) {
                     rotation = 65;  // Adjust navigation bank crossing to Project 2
+                } else if (scrollPercent >= 55 && scrollPercent < 85) {
+                    rotation = 120; // Glide vector entering Project 3
                 } else {
-                    rotation = 120; // Landing approach glide vector to Project 3
+                    rotation = 70;  // Approach alignment onto Project 4
                 }
             } else if (scrollTop < lastScrollTop) {
                 // Scrolling UP: banking flight trajectory upward
-                if (scrollPercent > 65) {
-                    rotation = 45;  // Lift upward out of Project 3
-                } else if (scrollPercent <= 65 && scrollPercent > 25) {
-                    rotation = -45; // Banking ascent crossing through Project 2
+                if (scrollPercent > 75) {
+                    rotation = 45;  // Lift upward out of Project 4
+                } else if (scrollPercent <= 75 && scrollPercent > 45) {
+                    rotation = -45; // Ascent crossing through Project 3
+                } else if (scrollPercent <= 45 && scrollPercent > 20) {
+                    rotation = 35;  // Readjustment passing Project 2
                 } else {
-                    rotation = 35;  // Stabilizing run approach to return home to Project 1
+                    rotation = -30; // Returning home to Project 1
                 }
             }
 
